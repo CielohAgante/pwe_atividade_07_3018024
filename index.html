@@ -28,6 +28,53 @@
     <main id="conteudo">
         <!-- indica que é o conteúdo principal dessa página -->
 
+        <div class="slideshow-container">
+            <!-- Slide 1 -->
+            <div class="mySlides fade">
+                <img src="./Imagens/A.png" style="width:100%">
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="mySlides fade">
+                <img src="./Imagens/B.jpg" style="width:100%">
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="mySlides fade">
+                <img src="./Imagens/C.jpg" style="width:100%">
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="mySlides fade" style="width: 100%; height: max-content;">
+                <h1>Conheça os desafios de inovação</h1>
+                <div class="videoWrapper">
+                    <p align="center">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/5g5LQe3m8Po" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </p>
+                </div>
+            </div>
+            
+
+            <!-- Next and previous buttons positioned inside the container -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+        </div>
+
         <div class="grid-container">
             <div class="grid-item">
                 <figure>
@@ -55,7 +102,8 @@
                     <img src="Imagens/maratona.jpeg" alt="Maratona" width="50%" height="50%">
                 </figure>
                 <br /><strong>Inscrições abertas para a III Maratona InterIF</strong>
-                <br />Maratona de programação do IFSP será realizada online, no dia 31 de outubro; inscrições até 26 de outubro
+                <br />Maratona de programação do IFSP será realizada online, no dia 31 de outubro; inscrições até 26 de
+                outubro
             </div>
         </div>
 
@@ -63,7 +111,9 @@
             <h1>Conheça os desafios de inovação</h1>
             <div class="videoWrapper">
                 <p align="center">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5g5LQe3m8Po" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5g5LQe3m8Po" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </p>
             </div>
         </section>
@@ -78,13 +128,7 @@
 
     </footer>
 
-    <!--INÍCIO: Utilização do Firebase!-->
-    <!--Não copiar este trecho se você não utiliza o Firebase!-->
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js"; const firebaseConfig = { apiKey: "AIzaSyDcr6AjxgAo2zFWohakGZVYvBQNOugOHmc", authDomain: "pwe-redes.firebaseapp.com", projectId: "pwe-redes", storageBucket: "pwe-redes.appspot.com",
-        messagingSenderId: "1014309916640", appId: "1:1014309916640:web:4d7fdf6150c527f0b72585" }; const app = initializeApp(firebaseConfig);
-    </script>
-    <!--FIM: Utilização do Firebase!-->
+    <script src="./js/slide.js"></script>
 
 </body>
 
